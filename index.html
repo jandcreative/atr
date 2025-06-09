@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Aquí Tu Reforma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/0c3856a335fdfdb8b0652f7c3d367fdd?family=Moderat-Regular"
+        rel="stylesheet">
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>$(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        var offset = target.offset().top;
+
+                        // Ajuste según el estado del menú
+                        if ($('.nav-up').length > 0) {
+                            offset -= 100; // Menú fijo
+                        } else {
+                            offset -= 200; // Menú aún no fijo, más espacio
+                        }
+
+                        offset = Math.max(offset, 0); // evitar scroll negativo
+
+                        $('html, body').animate({
+                            scrollTop: offset
+                        }, 1000);
+
+                        return false;
+                    }
+                }
+            });
+        });</script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="header-nav">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo">
+                        <img src="images/logo_aqui_living.svg" alt="aqui living" title="aqui living">
+                    </div>
+                </a>
+            </div>
+            <div class="desktop-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#sostenibilidad">Compromiso</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contactar">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="page-wrapper">
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Construimos tu nuevo hogar, de forma más humana, más rápida y más sostenible. </h1>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="empresa" class="values">
+            <div class="container">
+                <div class="intro">
+                    <span class="section">Empresa</span>
+                    <h2>Una nueva forma de construir. <br>Un nuevo modo de vivir.</h2>
+
+                    <p>Aqui Living nace para transformar el sector de la vivienda desde dentro. Formamos parte de Aqui
+                        Renovation Group, grupo líder en construcción y reformas del hogar, presente en más de 8 países.
+                    </p>
+
+                    <p>Diseñamos, fabricamos y montamos viviendas industrializadas con un objetivo claro: mejorar la
+                        vida de las personas desde su espacio más íntimo y esencial —su hogar.</p>
+
+                    <p>Combinamos más de 30 años de experiencia en el sector con la última innovación.</p>
+                </div>
+
+                <div class="block-spacer-s"></div>
+                <div class="list-values">
+                    <div class="item-value">
+                        <div class="icon">
+                            <img src="images/icon_plazos_entrega.svg" title="plazos entrega" alt="plazos entrega">
+                        </div>
+                        <h2>Plazos de entrega reducidos</h2>
+                    </div>
+                    <div class="item-value">
+                        <div class="icon">
+                            <img src="images/icon_materiales_sostenibles.svg" title="materiales sostenibles"
+                                alt="materiales sostenibles">
+                        </div>
+                        <h2>Materiales sostenibles</h2>
+                    </div>
+                    <div class="item-value">
+                        <div class="icon">
+                            <img src="images/icon_calidad_industrial.svg" title="calidad industrial"
+                                alt="calidad industrial">
+                        </div>
+                        <h2>Calidad industrial y precisión</h2>
+                    </div>
+                    <div class="item-value">
+                        <div class="icon">
+                            <img src="images/icon_diseno.svg" title="diseño pensando" alt="diseño pensando">
+                        </div>
+                        <h2>Diseño pensado para el bienestar</h2>
+                    </div>
+
+                </div>
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <div class="block-spacer-xs"></div>
+                <div class="intro">
+                    <span class="section">Qué hacemos</span>
+                    <h2>Casas que cuidan. <br>Procesos que transforman.</h2>
+                    <p>Desde el diseño hasta la entrega final, controlamos cada etapa del proceso constructivo para
+                        ofrecerte un hogar personalizado, eficiente y saludable.</p>
+                    <p>Construimos casas unifamiliares, viviendas modulares y espacios habitables con tecnología
+                        industrial, asegurando calidad constante y mínimo impacto ambiental.</p>
+                </div>
+
+            </div>
+            <div class="block-spacer-m"></div>
+            <div class="carousel-proyectos">
+                <div class="proyecto">
+                    <img alt="soluciones llave en mano" title="" src="images/reformas_cocinas_03.jpg">
+                    <div class="content">
+                        <h3>Viviendas<br>modulares</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img alt="casas personalizadas" title="casas personalizadas" src="images/reformas_banos_02.jpg">
+                    <div class="content">
+                        <h3>Casas<br>personalizadas</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img alt="vivienndas modulares" title="vivienndas modulares"
+                        src="images/reformas_integrales_01.jpg">
+                    <div class="content">
+                        <h3>Soluciones<br>llave en mano</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img alt="proyectos a medida" title="" src="images/rehabilitacion_edificios_04.jpg">
+                    <div class="content">
+                        <h3>Proyectos a medida<br>para promotoras</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="sostenibilidad">
+            <div class="container">
+                <div class="intro">
+                    <span class="section">Compromiso</span>
+                    <h2>Sostenibilidad desde la base. <br>Bienestar en cada detalle.</h2>
+                    <p>Apostamos por sistemas energéticamente eficientes y un modelo industrializado que reduce residuos
+                        y emisiones.</p>
+                    <p>Cada casa Aqui Living busca ser más que un espacio: un entorno que favorece la salud, la conexión
+                        con la naturaleza y la eficiencia energética.</p>
+                </div>
+            </div>
+            <div class="block-spacer-m"></div>
+            <div class="banner" style="background-image:url('images/img_banner_sostenibilidad.jpg');">
+            </div>
+        </section>
+
+        <section id="equipo">
+            <div class="container">
+                <div class="intro">
+                    <span class="section">Equipo</span>
+                    <h2>Nuestra mayor fortaleza. <br>Talento dedicado a construir tu tranquilidad.</h2>
+                </div>
+                <div class="block-spacer-s"></div>
+                <div class="carousel-equipo">
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="albert jane" title="albert jane" src="images/img_albert_jane.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Albert Jané</h3>
+                            <span class="position">Arquitecto - Director</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="Jorge del Campo" title="Jorge del Campo" src="images/img_jorge_del_campo_01.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Jorge del Campo</h3>
+                            <span class="position">Arquitecto - Grandes Cuentas</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="Mauratti Garcilazo" title="Mauratti Garcilazo"
+                                src="images/img_mauratti_gracilazo_01.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Mauratti Garcilazo</h3>
+                            <span class="position">Ingeniera Industrial - Jefa de Obra</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="Nuria García" title="Nuria García" src="images/img_nuria_garcia.jpg">
+                        </div>
+
+                        <div class="content">
+                            <h3>Nuria García</h3>
+                            <span class="position">Arquitecta - Jefa de Obra</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="Begoña Otero" title="Begoña Otero" src="images/img_begona_otero_01.jpg">
+                        </div>
+
+                        <div class="content">
+                            <h3>Begoña Otero</h3>
+                            <span class="position">Arquitecta - Gestión de proyecto</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="imagen">
+                            <img alt="Marta Trujillo" title="Marta Trujillo" src="images/img_marta_trujillo_01.jpg">
+                        </div>
+
+                        <div class="content">
+                            <h3>Marta Trujillo</h3>
+                            <span class="position">Interiorista</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="block-spacer-m"></div>
+
+        </section>
+
+        <section id="contactar" class="contactar" style="background-color: #4A3024;">
+            <div class="container">
+                <div class="block-spacer-m"></div>
+                <div class="container-contact">
+                    <h2>¿Quieres construir tu nuevo hogar con nosotros?</h2>
+                    <p>Estamos listos para ayudarte a dar el siguiente paso. Ya seas cliente final, promotora o
+                        arquitecto, hablemos.</p>
+                    <a href="#" class="button">Contáctanos</a>
+                </div>
+                <div class="block-spacer-m"></div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="footer-nav container">
+            <div class="info-footer">
+                <a href="#">
+                    <div class="logo">
+                        <img src="images/ATR-logo-marron-fondo-transp-1.png">
+                    </div>
+                </a>
+                <div class="links">
+                    <a href="https://www.facebook.com/AquiReforma/" target="_blank">
+                        <img src="images/facebook.png" alt="facebook" title="facebook">
+                    </a>
+                    <a href="https://twitter.com/aquitureforma" target="_blank">
+                        <img src="images/twitter.png" alt="twitter" title="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/aquitureforma" target="_blank">
+                        <img src="images/instagram.png" alt="instagram" title="instagram">
+                    </a>
+                    <a href="https://es.linkedin.com/company/aqui-tu-reforma" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin" title="linkedin">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<!-- <script type="text/javascript" src="assets/js/jquery.min.js"></script> -->
+<script type="text/javascript" src="assets/js/nav.js"></script>
+
+</html>
